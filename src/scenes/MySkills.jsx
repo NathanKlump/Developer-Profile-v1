@@ -20,7 +20,7 @@ const MySkills = () => {
           }}
         >
           <p className="font-playfair font-semibold text-4xl mb-5">
-            MY <span className="text-red">SKILLS</span>
+            MY <span className="text-red">SKILLSET</span>
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
@@ -66,15 +66,15 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">01</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Git Workflow
+                Spring Backend Development
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-            morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-            odio sit sagittis,
+          My employment at the Oakland University UTS department provided me with 
+          plentiful experience both creating, modifying, and improving the backends and APIs 
+          for Oakland Universities numerous applications and websites.
           </p>
         </motion.div>
 
@@ -100,10 +100,8 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
+          Although I am always eager to learn new libraries and frameworks, my primary experience with frontend web development is through the React.js library. 
+          I have used this library for professional projects through my employment, in school projects, and personal projects.
           </p>
         </motion.div>
         {/* IMAGINATIVE */}
@@ -122,16 +120,16 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">03</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Spring Backend Development
+                Git Workflow
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-            Sagittis, amet netus fringilla netus lobortis odio sed platea.
-            Bibendum.
+          I am familiar with enterprise level Git workflow through my employment at the Oakland University UTS department. 
+          I also recently started displaying some of my projects through a github account on my personal email, which can be accessed 
+          <a className="text-yellow" href="https://github.com/NathanKlump">&nbsp;here.</a>
+
           </p>
         </motion.div>
       </div>
