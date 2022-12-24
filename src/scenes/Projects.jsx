@@ -1,6 +1,10 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 
+import GpaCalculator from "../assets/GpaCalculator.png";
+import PinBall from "../assets/PinBall.png";
+import StarRealEstate from "../assets/StarRealEstate.png";
+
 const container = {
   hidden: {},
   visible: {
@@ -78,11 +82,40 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Project 1" />
-          <Project title="Project 2" />
+            <motion.div variants={projectVariant} className="relative">
+              <div className="absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
+                <p className="text-2xl font-playfair">GPA Calculator</p>
+                  <p className="mt-7">
+                  This project involved adding a function to retrieve the users grades directly from the Oakland University database and import the grades directly to the users gpa calculation. 
+                  The code for this project can be examined
+                  <a className="text-red" target="_blank" rel="noreferrer" href="https://github.com/NathanKlump/gpa-calculator">&nbsp;here.</a>
+                  </p>
+              </div>
+                <img src={GpaCalculator} alt="GPA calculator" />
+            </motion.div>
+            <motion.div variants={projectVariant} className="relative">
+              <div className="absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
+                <p className="text-2xl font-playfair">3D Pinball Machine</p>
+                  <p className="mt-7">
+                  This is a pinball machine built in Unity using C#. This was my first major project in school and I believe it served as a unique learning experience as not only did it 
+                  improve my experience in working as a team using a scrum workflow, 
+                  but it also helped me familiarize myself with learning new development languages-a skill that I am always happy to exercise. 
+                  </p>
+              </div>
+                <img src={PinBall} alt="GPA calculator" />
+            </motion.div>
 
           {/* ROW 2 */}
-          <Project title="Project 3" />
+          <motion.div variants={projectVariant} className="relative">
+              <div className="absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
+                <p className="text-2xl font-playfair">Real Estate Comparison Tool</p>
+                  <p className="mt-7">
+                  The All Star Real Estate Comparison tool was designed to compare two or more houses on the market based on size, bedrooms, price per square foot ect. 
+                  I utilized Rapid.api to scrape information from Zillow to use for the comparison. 
+                  </p>
+              </div>
+                <img src={StarRealEstate} alt="GPA calculator" />
+            </motion.div>
           <Project title="Project 4" />
           <Project title="Project 5" />
 
