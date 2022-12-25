@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import GpaCalculator from "../assets/GpaCalculator.png";
 import PinBall from "../assets/PinBall.png";
 import StarRealEstate from "../assets/StarRealEstate.png";
+import PasswordInformation from "../assets/PasswordInformation.png";
 
 const container = {
   hidden: {},
@@ -17,25 +18,6 @@ const container = {
 const projectVariant = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: { opacity: 1, scale: 1 },
-};
-
-const Project = ({ title }) => {
-  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-  const projectTitle = title.split(" ").join("-").toLowerCase();
-
-  return (
-    <motion.div variants={projectVariant} className="relative">
-      <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-          porttitor accumsan tincidunt.
-        </p>
-      </div>
-      <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
-    </motion.div>
-  );
 };
 
 const Projects = () => {
@@ -76,12 +58,12 @@ const Projects = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-          <div
+          {/*<div
             className="flex justify-center text-center items-center p-10 bg-red
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
             BEAUTIFUL USER INTERFACES
-          </div>
+          </div>*/}
             <motion.div variants={projectVariant} className="relative">
               <div className="absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
                 <p className="text-2xl font-playfair">GPA Calculator</p>
@@ -104,9 +86,7 @@ const Projects = () => {
               </div>
                 <img src={PinBall} alt="GPA calculator" />
             </motion.div>
-
-          {/* ROW 2 */}
-          <motion.div variants={projectVariant} className="relative">
+            <motion.div variants={projectVariant} className="relative">
               <div className="absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
                 <p className="text-2xl font-playfair">Real Estate Comparison Tool</p>
                   <p className="mt-7">
@@ -116,18 +96,29 @@ const Projects = () => {
               </div>
                 <img src={StarRealEstate} alt="GPA calculator" />
             </motion.div>
-          <Project title="Project 4" />
-          <Project title="Project 5" />
+
+          {/* ROW 2 */}
+          <motion.div variants={projectVariant} className="relative">
+              <div className="absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
+                <p className="text-2xl font-playfair">Password Information Portal</p>
+                  <p className="mt-7">
+                  Tasked with creating a portal to display the number of days since a user had changed their 
+                  password to the Oakland University MySail website. Created a React application with a Spring backend and CAS server authentication. 
+                  The code for this project can be examined
+                  <a className="text-red" target="_blank" rel="noreferrer" href="https://github.com/NathanKlump/password-information">&nbsp;here.</a>
+                  </p>
+              </div>
+                <img src={PasswordInformation} alt="GPA calculator" />
+            </motion.div>
 
           {/* ROW 3 */}
-          <Project title="Project 6" />
-          <Project title="Project 7" />
-          <div
+          
+          {/*<div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
             SMOOTH USER EXPERIENCE
-          </div>
+        </div>*/}
         </motion.div>
       </div>
     </section>
