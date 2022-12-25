@@ -82,6 +82,8 @@ const Projects = () => {
                   This is a pinball machine built in Unity using C#. This was my first major project in school and I believe it served as a unique learning experience as not only did it 
                   improve my experience in working as a team using a scrum workflow, 
                   but it also helped me familiarize myself with learning new development languages-a skill that I am always happy to exercise. 
+                  The code for this project can be examined
+                  <a className="text-red" target="_blank" rel="noreferrer" href="https://github.com/NathanKlump/Sophomore-Project">&nbsp;here.</a>
                   </p>
               </div>
                 <img src={PinBall} alt="GPA calculator" />
