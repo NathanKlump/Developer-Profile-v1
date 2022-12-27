@@ -59,7 +59,7 @@ function App() {
           <MySkills />
         </motion.div>
       </div>
-      <div className="pt-20"></div>
+      <div className="py-12"/>
       <LineGradient />
       <div className="w-5/6 mx-auto">
         <motion.div
