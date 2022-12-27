@@ -112,13 +112,15 @@ const Contact = () => {
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
               name="message"
               ref={register}
-              onChange={(event) => setCharacterCount(event.target.value.length)}
               rows="4"
               cols="50"
               {...register("message", {
                 required: true,
                 maxLength: 2000,
               })}
+              onChange={
+                (event) => setCharacterCount(event.target.value.length)
+              }
             />
             <p className="text-blue font-bold text-xs">{characterCount}/2000</p>
             {errors.message && (
