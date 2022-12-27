@@ -13,17 +13,15 @@ const Landing = ({ setSelectedPage }) => {
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
         
           <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20
-            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
-          >
-            
+            className="relative z-0 ml-20 before:absolute before:-top-5 before:-left-5
+            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full 
+            before:border-2 before:border-clay-red before:z-[-1]"
+          >     
             <img
               alt="profile"
               className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[500px] md:max-w-[600px]"
               src={nathan}
             />
-            
-            
           </div>
       </div>
 
@@ -43,7 +41,7 @@ const Landing = ({ setSelectedPage }) => {
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
             Nathaniel {""}
             <span
-              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
+              className="xs:relative xs:text-deep-blue xs:font-semibold z-20
               before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
             >
               Klump
@@ -70,11 +68,11 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5 pl-0.5"
+            className="rounded-r-sm bg-bofa-grey py-0.5 pr-0.5 pl-0.5"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
+            <div className="bg-clay-red hover:text-baby-blue transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
               Let's talk.
             </div>
           </AnchorLink>

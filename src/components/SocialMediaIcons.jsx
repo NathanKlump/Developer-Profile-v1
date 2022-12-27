@@ -9,7 +9,10 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="linkedin-link" src="../assets/linkedin.png" />
+        <div className="bg-black rounded">
+          <img alt="linkedin-link" src="../assets/linkedin.png" />
+        </div>
+        
       </a>
       <a
         className="hover:opacity-50 transition duration-500"

@@ -77,7 +77,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+              className="w-full bg-baby-blue font-semibold placeholder-opaque-black p-3"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -86,14 +86,14 @@ const Contact = () => {
               })}
             />
             {errors.name && (
-              <p className="text-red mt-1">
+              <p className="text-clay-red mt-1">
                 {errors.name.type === "required" && "This field is required."}
                 {errors.name.type === "maxLength" && "Max length is 100 char."}
               </p>
             )}
 
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-baby-blue font-semibold placeholder-opaque-black p-3 mt-5"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -102,14 +102,14 @@ const Contact = () => {
               })}
             />
             {errors.email && (
-              <p className="text-red mt-1">
+              <p className="text-clay-red mt-1">
                 {errors.email.type === "required" && "This field is required."}
                 {errors.email.type === "pattern" && "Invalid email address."}
               </p>
             )}
 
             <textarea
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-baby-blue font-semibold placeholder-opaque-black p-3 mt-5"
               name="message"
               ref={register}
               rows="4"
@@ -122,9 +122,9 @@ const Contact = () => {
                 (event) => setCharacterCount(event.target.value.length)
               }
             />
-            <p className="text-blue font-bold text-xs">{characterCount}/2000</p>
+            <p className="text-clay-red font-bold text-xs">{characterCount}/2000</p>
             {errors.message && (
-              <p className="text-red mt-1">
+              <p className="text-clay-red mt-1">
                 {errors.message.type === "required" &&
                   "This field is required."}
                 {errors.message.type === "maxLength" &&
@@ -134,7 +134,7 @@ const Contact = () => {
 
 
             <button
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-clay-red hover:text-white transition duration-500"
               type="submit"
             >
               SEND ME A MESSAGE

@@ -5,6 +5,7 @@ import GpaCalculator from "../assets/GpaCalculator.png";
 import PinBall from "../assets/PinBall.png";
 import StarRealEstate from "../assets/StarRealEstate.png";
 import PasswordInformation from "../assets/PasswordInformation.png";
+import MySailSoffits from "../assets/MySail.png";
 
 const container = {
   hidden: {},
@@ -37,7 +38,7 @@ const Projects = () => {
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-            <span className="text-red">PRO</span>JECTS
+            <span className="text-clay-red">PRO</span>JECTS
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />
@@ -70,7 +71,7 @@ const Projects = () => {
                   <p className="mt-7">
                   This project involved adding a function to retrieve the users grades directly from the Oakland University database and import the grades directly to the users gpa calculation. 
                   The code for this project can be examined
-                  <a className="text-red" target="_blank" rel="noreferrer" href="https://github.com/NathanKlump/gpa-calculator">&nbsp;here.</a>
+                  <a className="text-clay-red" target="_blank" rel="noreferrer" href="https://github.com/NathanKlump/gpa-calculator">&nbsp;here.</a>
                   </p>
               </div>
                 <img src={GpaCalculator} alt="GPA calculator" />
@@ -83,10 +84,10 @@ const Projects = () => {
                   improve my experience in working as a team using a scrum workflow, 
                   but it also helped me familiarize myself with learning new development languages-a skill that I am always happy to exercise. 
                   The code for this project can be examined
-                  <a className="text-red" target="_blank" rel="noreferrer" href="https://github.com/NathanKlump/Sophomore-Project">&nbsp;here.</a>
+                  <a className="text-clay-red" target="_blank" rel="noreferrer" href="https://github.com/NathanKlump/Sophomore-Project">&nbsp;here.</a>
                   </p>
               </div>
-                <img src={PinBall} alt="GPA calculator" />
+                <img src={PinBall} alt="PinBall" />
             </motion.div>
             <motion.div variants={projectVariant} className="relative">
               <div className="absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
@@ -96,7 +97,7 @@ const Projects = () => {
                   I utilized Rapid.api to scrape information from Zillow to use for the comparison. 
                   </p>
               </div>
-                <img src={StarRealEstate} alt="GPA calculator" />
+                <img src={StarRealEstate} alt="StarRealEstate" />
             </motion.div>
 
           {/* ROW 2 */}
@@ -107,10 +108,22 @@ const Projects = () => {
                   Tasked with creating a portal to display the number of days since a user had changed their 
                   password to the Oakland University MySail website. Created a React application with a Spring backend and CAS server authentication. 
                   The code for this project can be examined
-                  <a className="text-red" target="_blank" rel="noreferrer" href="https://github.com/NathanKlump/password-information">&nbsp;here.</a>
+                  <a className="text-clay-red" target="_blank" rel="noreferrer" href="https://github.com/NathanKlump/password-information">&nbsp;here.</a>
                   </p>
               </div>
-                <img src={PasswordInformation} alt="GPA calculator" />
+                <img src={PasswordInformation} alt="PasswordInformation" />
+            </motion.div>
+            <motion.div variants={projectVariant} className="relative">
+              <div className="absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
+                <p className="text-2xl font-playfair">MySail Soffits</p>
+                  <p className="mt-7">
+                  Tasked with creating the react apps to be rendered in the Oakland University home page MySail. 
+                  These apps hold links to the various services and programs the University offers.
+                  The webpage where these projects live can be found
+                  <a className="text-clay-red" target="_blank" rel="noreferrer" href="https://mysail.oakland.edu/uPortal/f/welcome/normal/render.uP">&nbsp;here.</a>
+                  </p>
+              </div>
+                <img src={MySailSoffits} alt="MySailSoffits" />
             </motion.div>
 
           {/* ROW 3 */}

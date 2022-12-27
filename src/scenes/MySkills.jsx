@@ -20,7 +20,7 @@ const MySkills = () => {
           }}
         >
           <p className="font-playfair font-semibold text-4xl mb-5">
-            MY <span className="text-red">SKILLSET</span>
+            MY <span className="text-clay-red">SKILLSET</span>
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
@@ -34,7 +34,7 @@ const MySkills = () => {
           {isAboveLarge ? (
             <div
               className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
-              before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
+              before:w-full before:h-full before:border-2 before:border-clay-red before:z-[-1]"
             >
               <img
                 alt="skills"
@@ -69,7 +69,7 @@ const MySkills = () => {
                 Spring Backend Development
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-baby-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
           My employment at the Oakland University UTS department provided me with 
@@ -97,7 +97,7 @@ const MySkills = () => {
                 React Frontend Development
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-clay-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
           Although I am always eager to learn new libraries and frameworks, my primary experience with frontend web development is through the React.js library. 
@@ -123,12 +123,12 @@ const MySkills = () => {
                 Git Workflow
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-baby-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
           I am familiar with enterprise level Git workflow through my employment at the Oakland University UTS department. 
           I also recently started displaying some of my projects through a github account on my personal email, which can be accessed 
-          <a className="text-yellow" href="https://github.com/NathanKlump">&nbsp;here.</a>
+          <a className="text-clay-red" href="https://github.com/NathanKlump">&nbsp;here.</a>
 
           </p>
         </motion.div>

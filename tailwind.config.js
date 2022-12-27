@@ -5,6 +5,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "clay-red": "#bd7a6f",
+        "baby-blue": "#d6f5fa",
+        "bofa-grey": "#2e333a",
+        white: "#eeeff1",
         "deep-blue": "#010026",
         blue: "#2CBCE9",
         red: "#DC4492",
