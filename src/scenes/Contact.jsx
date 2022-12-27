@@ -1,8 +1,10 @@
 import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import { useState } from 'react';
 
 const Contact = () => {
+  const [characterCount, setCharacterCount] = useState(0);
   const {
     register,
     trigger,
@@ -71,7 +73,7 @@ const Contact = () => {
           <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6e"
+            action="https://formsubmit.co/nathanieljklump@gmail.com"
             method="POST"
           >
             <input
@@ -109,7 +111,8 @@ const Contact = () => {
             <textarea
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
               name="message"
-              placeholder="MESSAGE"
+              ref={register}
+              onChange={(event) => setCharacterCount(event.target.value.length)}
               rows="4"
               cols="50"
               {...register("message", {
@@ -117,6 +120,7 @@ const Contact = () => {
                 maxLength: 2000,
               })}
             />
+            <p className="text-blue font-bold text-xs">{characterCount}/2000</p>
             {errors.message && (
               <p className="text-red mt-1">
                 {errors.message.type === "required" &&
@@ -125,6 +129,7 @@ const Contact = () => {
                   "Max length is 2000 char."}
               </p>
             )}
+
 
             <button
               className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
