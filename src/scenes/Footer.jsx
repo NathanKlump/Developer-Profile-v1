@@ -2,17 +2,18 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 
 const Footer = () => {
   return (
-    <footer className="h-64 bg-clay-red pt-10">
+    <footer className="h-28 bg-clay-red pt-10">
       <div className="w-10/12 mx-auto">
-        <SocialMediaIcons />
         <div className="md:flex justify-center md:justify-between text-center ">
-          <p className="font-playfair font-semibold text-2xl">
-            Nathaniel Klump
+          <p>
+            Created By Nathaniel Klump,
           </p>
-          <p className="font-playfair text-md">
-            ©2022 Klump. All Rights Reserved.
-          </p>
+          <p>nathanieljklump@gmail.com</p>
+          <p>(810)-280-5977</p>
         </div>
+        <p>The code for this website is available 
+          <a className="text-baby-blue" href="https://github.com/NathanKlump">&nbsp;here.</a>
+        </p>
       </div>
     </footer>
   );
