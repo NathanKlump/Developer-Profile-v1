@@ -6,6 +6,7 @@ import PinBall from "../assets/PinBall.png";
 import StarRealEstate from "../assets/StarRealEstate.png";
 import PasswordInformation from "../assets/PasswordInformation.png";
 import MySailSoffits from "../assets/MySail.png";
+import WebPage from "../assets/WebPage.png";
 
 const container = {
   hidden: {},
@@ -125,7 +126,18 @@ const Projects = () => {
               </div>
                 <img src={MySailSoffits} alt="MySailSoffits" />
             </motion.div>
-
+            <motion.div variants={projectVariant} className="relative">
+              <div className="absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
+                <p className="text-2xl font-playfair">Profile Page</p>
+                  <p className="mt-7">
+                  I have decided to test my web development skills by creating a personalized website in react using Tailwind CSS and framer Motion. 
+                  This website will list my projects and I plan on updating it frequently.
+                  The code for this project can be examined
+                  <a className="text-clay-red" target="_blank" rel="noreferrer" href="https://github.com/NathanKlump/Portfolio-Website">&nbsp;here.</a>
+                  </p>
+              </div>
+                <img src={WebPage} alt="WebPage" />
+            </motion.div>
           {/* ROW 3 */}
           
           {/*<div

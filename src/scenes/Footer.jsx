@@ -1,5 +1,3 @@
-import SocialMediaIcons from "../components/SocialMediaIcons";
-
 const Footer = () => {
   return (
     <footer className="h-28 bg-clay-red pt-10">
