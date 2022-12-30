@@ -9,9 +9,6 @@ const Footer = () => {
           <p>nathanieljklump@gmail.com</p>
           <p>(810)-280-5977</p>
         </div>
-        <p>The code for this website is available 
-          <a className="text-baby-blue" href="https://github.com/NathanKlump">&nbsp;here.</a>
-        </p>
       </div>
     </footer>
   );

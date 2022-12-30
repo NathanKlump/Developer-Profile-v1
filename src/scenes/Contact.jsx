@@ -111,6 +111,7 @@ const Contact = () => {
             <textarea
               className="w-full bg-baby-blue font-semibold placeholder-opaque-black p-3 mt-5"
               name="message"
+              placeholder="MESSAGE"
               ref={register}
               rows="4"
               cols="50"

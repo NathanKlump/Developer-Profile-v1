@@ -22,12 +22,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-3xl font-bold">NK</h4>
+        <h4 className="font-playfair text-3xl font-bold pr-6">NK</h4>
         
 
         {/* DESKTOP NAV */}
-          <div className={`${navbarText} flex justify-between gap-16 font-opensans text-sm font-semibold`}>
-            <Link
+          <div className={`${navbarText} justify-between flex flex-wrap font-opensans text-sm font-semibold w-[400px] gap-4 pl-6`}>
+            <Link 
               page="Home"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
