@@ -1,5 +1,6 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 import GpaCalculator from "../assets/GpaCalculator.png";
 import PinBall from "../assets/PinBall.png";
@@ -23,6 +24,8 @@ const projectVariant = {
 };
 
 const Projects = () => {
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+  
   return (
     <section id="projects" className="pt-48 pb-48">
       {/* HEADINGS */}
@@ -60,14 +63,10 @@ const Projects = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-          {/*<div
-            className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            BEAUTIFUL USER INTERFACES
-          </div>*/}
             <motion.div variants={projectVariant} className="relative">
-              <div className="absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
+              <div className={`${isDesktop ? "p-16" : "p-3"} overflow-scroll absolute h-full w-full opacity-0 hover:opacity-90 
+              transition duration-500 bg-grey z-30 flex flex-col justify-center items-center 
+              text-center text-deep-blue`}>
                 <p className="text-2xl font-playfair">GPA Calculator</p>
                   <p className="mt-7">
                   This project involved adding a function to retrieve the users grades directly from the Oakland University database and import the grades directly to the users gpa calculation. 
@@ -78,7 +77,9 @@ const Projects = () => {
                 <img src={GpaCalculator} alt="GPA calculator" />
             </motion.div>
             <motion.div variants={projectVariant} className="relative">
-              <div className="absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
+            <div className={`${isDesktop ? "p-16" : "p-3"} overflow-scroll absolute h-full w-full opacity-0 hover:opacity-90 
+              transition duration-500 bg-grey z-30 flex flex-col justify-center items-center 
+              text-center text-deep-blue`}>
                 <p className="text-2xl font-playfair">3D Pinball Machine</p>
                   <p className="mt-7">
                   This is a pinball machine built in Unity using C#. This was my first major project in school and I believe it served as a unique learning experience as not only did it 
@@ -91,7 +92,9 @@ const Projects = () => {
                 <img src={PinBall} alt="PinBall" />
             </motion.div>
             <motion.div variants={projectVariant} className="relative">
-              <div className="absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
+            <div className={`${isDesktop ? "p-16" : "p-3"} overflow-scroll absolute h-full w-full opacity-0 hover:opacity-90 
+              transition duration-500 bg-grey z-30 flex flex-col justify-center items-center 
+              text-center text-deep-blue`}>
                 <p className="text-2xl font-playfair">Real Estate Comparison Tool</p>
                   <p className="mt-7">
                   The All Star Real Estate Comparison tool was designed to compare two or more houses on the market based on size, bedrooms, price per square foot ect. 
@@ -103,7 +106,9 @@ const Projects = () => {
 
           {/* ROW 2 */}
           <motion.div variants={projectVariant} className="relative">
-              <div className="absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
+          <div className={`${isDesktop ? "p-16" : "p-3"} overflow-scroll absolute h-full w-full opacity-0 hover:opacity-90 
+              transition duration-500 bg-grey z-30 flex flex-col justify-center items-center 
+              text-center text-deep-blue`}>
                 <p className="text-2xl font-playfair">Password Information Portal</p>
                   <p className="mt-7">
                   Tasked with creating a portal to display the number of days since a user had changed their 
@@ -115,7 +120,9 @@ const Projects = () => {
                 <img src={PasswordInformation} alt="PasswordInformation" />
             </motion.div>
             <motion.div variants={projectVariant} className="relative">
-              <div className="absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
+            <div className={`${isDesktop ? "p-16" : "p-3"} overflow-scroll absolute h-full w-full opacity-0 hover:opacity-90 
+              transition duration-500 bg-grey z-30 flex flex-col justify-center items-center 
+              text-center text-deep-blue`}>
                 <p className="text-2xl font-playfair">MySail Soffits</p>
                   <p className="mt-7">
                   Tasked with creating the react apps to be rendered in the Oakland University home page MySail. 
@@ -127,7 +134,9 @@ const Projects = () => {
                 <img src={MySailSoffits} alt="MySailSoffits" />
             </motion.div>
             <motion.div variants={projectVariant} className="relative">
-              <div className="absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
+            <div className={`${isDesktop ? "p-16" : "p-3"} overflow-scroll absolute h-full w-full opacity-0 hover:opacity-90 
+              transition duration-500 bg-grey z-30 flex flex-col justify-center items-center 
+              text-center text-deep-blue`}>
                 <p className="text-2xl font-playfair">Profile Page</p>
                   <p className="mt-7">
                   I have decided to test my web development skills by creating a personalized website in react using Tailwind CSS and framer Motion. 
@@ -139,13 +148,6 @@ const Projects = () => {
                 <img src={WebPage} alt="WebPage" />
             </motion.div>
           {/* ROW 3 */}
-          
-          {/*<div
-            className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            SMOOTH USER EXPERIENCE
-        </div>*/}
         </motion.div>
       </div>
     </section>
