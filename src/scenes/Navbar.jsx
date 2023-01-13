@@ -19,10 +19,14 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const navbarBackground = isTopOfPage ? "" : "bg-clay-red";
   const navbarText = isTopOfPage ? "text-clay-red" : "";
 
+  document.getElementById("scroll-to-top-button").addEventListener("click", function(){
+    window.scrollTo(0,0);
+  });
+
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-3xl font-bold pr-6">NK</h4>
+        <button id="scroll-to-top-button" className="font-playfair text-3xl font-bold pr-6">NK</button>
         
 
         {/* DESKTOP NAV */}
