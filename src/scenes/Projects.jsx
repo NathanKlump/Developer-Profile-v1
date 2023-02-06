@@ -9,6 +9,7 @@ import PasswordInformation from "../assets/PasswordInformation.png";
 import MySailSoffits from "../assets/MySail.png";
 import WebPage from "../assets/WebPage.png";
 import dinnerPlanner from "../assets/dinner-planner.png";
+import GPTPortal from "../assets/GPTPortal.png";
 
 const container = {
   hidden: {},
@@ -160,6 +161,19 @@ const Projects = () => {
                   </p>
               </div>
                 <img src={StarRealEstate} alt="StarRealEstate" />
+            </motion.div>
+            <motion.div variants={projectVariant} className="relative">
+            <div className={`${isDesktop ? "p-16" : "p-3"} overflow-scroll absolute h-full w-full opacity-0 hover:opacity-90 
+              transition duration-500 bg-grey z-30 flex flex-col justify-center items-center 
+              text-center text-deep-blue`}>
+                <p className="text-2xl font-playfair">Personal GPT-3 API Access</p>
+                  <p className="mt-7">
+                  I created this tool to hit the OpenAi API to bypass security included in the chatGPT product. This url can also be accessed from every browser and also on
+                  mobile devices or virtual machines without an account or sign in. This tool can be accessed 
+                  <a className="text-clay-red" target="_blank" rel="noreferrer" href="https://personal-ai-access.vercel.app/">&nbsp;here.</a>
+                  </p>
+              </div>
+                <img src={GPTPortal} alt="GPTPortal" />
             </motion.div>
         </motion.div>
       </div>
