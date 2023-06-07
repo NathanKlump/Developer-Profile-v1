@@ -5,11 +5,11 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import GpaCalculator from "../assets/GpaCalculator.png";
 import PinBall from "../assets/PinBall.png";
 import StarRealEstate from "../assets/StarRealEstate.png";
-import PasswordInformation from "../assets/PasswordInformation.png";
 import MySailSoffits from "../assets/MySail.png";
 import WebPage from "../assets/WebPage.png";
 import dinnerPlanner from "../assets/dinner-planner.png";
 import GPTPortal from "../assets/GPTPortal.png";
+import MusicPlayer from "../assets/MusicPlayer.png";
 
 const container = {
   hidden: {},
@@ -111,15 +111,14 @@ const Projects = () => {
           <div className={`${isDesktop ? "p-16" : "p-3"} overflow-scroll absolute h-full w-full opacity-0 hover:opacity-90 
               transition duration-500 bg-grey z-30 flex flex-col justify-center items-center 
               text-center text-deep-blue`}>
-                <p className="text-2xl font-playfair">Password Information Portal</p>
+                <p className="text-2xl font-playfair">Music App</p>
                   <p className="mt-7">
-                  Tasked with creating a portal to display the number of days since a user had changed their 
-                  password to the Oakland University MySail website. Created a React application with a Spring backend and CAS server authentication. 
-                  The code for this project can be examined
-                  <a className="text-clay-red" target="_blank" rel="noreferrer" href="https://github.com/NathanKlump/password-information">&nbsp;here.</a>
+                  I made this music player app to try to get better with state management. It uses 
+                  react, express, and a firebase database. You can see it
+                  <a className="text-clay-red" target="_blank" rel="noreferrer" href="https://background-music-sandy.vercel.app/">&nbsp;here.</a>
                   </p>
               </div>
-                <img src={PasswordInformation} alt="PasswordInformation" />
+                <img src={MusicPlayer} alt="MusicPlayer" />
             </motion.div>
             <motion.div variants={projectVariant} className="relative">
             <div className={`${isDesktop ? "p-16" : "p-3"} overflow-scroll absolute h-full w-full opacity-0 hover:opacity-90 
